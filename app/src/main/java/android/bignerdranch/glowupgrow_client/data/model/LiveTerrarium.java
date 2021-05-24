@@ -1,86 +1,86 @@
 package android.bignerdranch.glowupgrow_client.data.model;
 
 public class LiveTerrarium {
-    private int terrariumID;
-    private int userID;
-    private int modelID;
-    private int plantID;
-    private int temp;
-    private int soilMoisture;
-    private int humidity;
-    private int lightLevel;
-    private int daysGrown;
+    private Integer terrariumID;
+    private Integer userID;
+    private Integer modelID;
+    private Integer plantID;
+    private Double temperature;
+    private Double soilMoisture;
+    private Double humidity;
+    private Double lightLevel;
+    private Integer daysGrown;
 
-    public LiveTerrarium(int terrariumID, int userID, int modelID, int plantID, int temp,
-                         int soilMoisture, int humidity, int lightLevel, int daysGrown) {
+    public LiveTerrarium(Integer terrariumID, Integer userID, Integer modelID, Integer plantID, Double temperature,
+                         Double soilMoisture, Double humidity, Double lightLevel, Integer daysGrown) {
         this.terrariumID = terrariumID;
         this.userID = userID;
         this.modelID = modelID;
         this.plantID = plantID;
-        this.temp = temp;
+        this.temperature = temperature;
         this.soilMoisture = soilMoisture;
         this.humidity = humidity;
         this.lightLevel = lightLevel;
         this.daysGrown = daysGrown;
     }
 
-    public int getTerrariumID() {
+    public Integer getTerrariumID() {
         return terrariumID;
     }
 
-    public int getUserID() {
+    public Integer getUserID() {
         return userID;
     }
 
-    public int getModelID() {
+    public Integer getModelID() {
         return modelID;
     }
 
-    public int getPlantID() {
+    public Integer getPlantID() {
         return plantID;
     }
 
-    public void setPlantID(int plantID) {
+    public void setPlantID(Integer plantID) {
         this.plantID = plantID;
     }
 
-    public int getTemp() {
-        return temp;
+    public Double getTemp() {
+        return temperature;
     }
 
-    public void setTemp(int temp) {
-        this.temp = temp;
+    public void setTemp(Double temp) {
+        this.temperature = temp;
     }
 
-    public int getSoilMoisture() {
+    public Double getSoilMoisture() {
         return soilMoisture;
     }
 
-    public void setSoilMoisture(int soilMoisture) {
+    public void setSoilMoisture(Double soilMoisture) {
         this.soilMoisture = soilMoisture;
     }
 
-    public int getHumidity() {
+    public Double getHumidity() {
         return humidity;
     }
 
-    public void setHumidity(int humidity) {
+    public void setHumidity(Double humidity) {
         this.humidity = humidity;
     }
 
-    public int getLightLevel() {
+    public Double getLightLevel() {
         return lightLevel;
     }
 
-    public void setLightLevel(int lightLevel) {
+    public void setLightLevel(Double lightLevel) {
         this.lightLevel = lightLevel;
     }
 
-    public int getDaysGrown() {
+    public Integer getDaysGrown() {
         return daysGrown;
     }
 
-    public void setDaysGrown(int daysGrown) {
+    public void setDaysGrown(Integer daysGrown) {
         this.daysGrown = daysGrown;
     }
 }

@@ -1,20 +1,20 @@
 package android.bignerdranch.glowupgrow_client.data.model;
 
 public class Plant {
-    private int plantID;
+    private Integer plantID;
     private String name;
-    private int temp;
-    private int soilMoisture;
-    private int humidity;
-    private int lightLevel;
-    private int growthTimeDays;
-    private int spaceReq;
+    private Double temperature;
+    private Double soilMoisture;
+    private Double humidity;
+    private Double lightLevel;
+    private Integer growthTimeDays;
+    private Double spaceReq;
 
-    public Plant(int plantID, String name, int temp, int soilMoisture, int humidity,
-                 int lightLevel, int growthTimeDays, int spaceReq) {
+    public Plant(Integer plantID, String name, Double temperature, Double soilMoisture,
+                 Double humidity, Double lightLevel, Integer growthTimeDays, Double spaceReq) {
         this.plantID = plantID;
         this.name = name;
-        this.temp = temp;
+        this.temperature = temperature;
         this.soilMoisture = soilMoisture;
         this.humidity = humidity;
         this.lightLevel = lightLevel;
@@ -22,7 +22,7 @@ public class Plant {
         this.spaceReq = spaceReq;
     }
 
-    public int getPlantID() {
+    public Integer getPlantID() {
         return plantID;
     }
 
@@ -30,27 +30,23 @@ public class Plant {
         return name;
     }
 
-    public int getTemp() {
-        return temp;
+    public Double getTemp() {
+        return temperature;
     }
 
-    public int getSoilMoisture() {
+    public Double getSoilMoisture() {
         return soilMoisture;
     }
 
-    public int getHumidity() {
-        return humidity;
-    }
+    public Double getHumidity() { return humidity; }
 
-    public int getLightLevel() {
+    public Double getLightLevel() {
         return lightLevel;
     }
 
-    public int getGrowthTimeDays() {
+    public Integer getGrowthTimeDays() {
         return growthTimeDays;
     }
 
-    public int getSpaceReq() {
-        return spaceReq;
-    }
+    public Double getSpaceReq() { return spaceReq; }
 }
