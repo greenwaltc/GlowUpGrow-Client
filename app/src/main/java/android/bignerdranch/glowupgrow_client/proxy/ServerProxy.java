@@ -69,7 +69,7 @@ public class ServerProxy {
      * createTerrarium() // create a new live terrarium and assign it to a user
      * sends a request to the server to create a terrarium and receives the result
      */
-    public CreateTerrResult createTerrarium(CreateTerrRequest request) {
+    public GetTerrResult createTerrarium(CreateTerrRequest request) {
         if (connection == null) return null;
 
         // Create JSON request string and send request to the server
@@ -80,7 +80,7 @@ public class ServerProxy {
         String response = handleConnection(json);
 
         // Decode response data and return result
-        CreateTerrResult result = gson.fromJson(response, CreateTerrResult.class);
+        GetTerrResult result = gson.fromJson(response, GetTerrResult.class);
 
         return result;
     }
