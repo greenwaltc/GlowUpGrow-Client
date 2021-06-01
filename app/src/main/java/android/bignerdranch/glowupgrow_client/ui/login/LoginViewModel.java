@@ -6,9 +6,9 @@ import androidx.lifecycle.ViewModel;
 
 import android.util.Patterns;
 
-import android.bignerdranch.glowupgrow_client.data.LoginRepository;
-import android.bignerdranch.glowupgrow_client.data.Result;
-import android.bignerdranch.glowupgrow_client.data.model.LoggedInUser;
+import android.bignerdranch.glowupgrow_client.Data.LoginRepository;
+import android.bignerdranch.glowupgrow_client.Data.Result;
+import android.bignerdranch.glowupgrow_client.Data.model.LoggedInUser;
 import android.bignerdranch.glowupgrow_client.R;
 
 public class LoginViewModel extends ViewModel {

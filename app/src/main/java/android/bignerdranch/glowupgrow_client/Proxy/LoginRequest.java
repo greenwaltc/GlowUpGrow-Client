@@ -1,16 +1,16 @@
-package android.bignerdranch.glowupgrow_client.proxy;
+package android.bignerdranch.glowupgrow_client.Proxy;
 
 import java.lang.reflect.Field;
 
-public class GetTerrRequest {
-    private String authToken;
-    private int terrariumID;
+public class LoginRequest {
+    private String username;
+    private String password;
 
-    public GetTerrRequest() {}
+    public LoginRequest() {}
 
-    public GetTerrRequest(String authToken, int terrariumID) {
-        setAuthToken(authToken);
-        setTerrariumID(terrariumID);
+    public LoginRequest(String username, String password) {
+        setUsername(username);
+        setPassword(password);
     }
 
     /**
@@ -45,19 +45,19 @@ public class GetTerrRequest {
         return false;
     }
 
-    public String getAuthToken() {
-        return authToken;
+    public String getUsername() {
+        return username;
     }
 
-    public void setAuthToken(String authToken) {
-        this.authToken = authToken;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public int getTerrariumID() {
-        return terrariumID;
+    public String getPassword() {
+        return password;
     }
 
-    public void setTerrariumID(int terrariumID) {
-        this.terrariumID = terrariumID;
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

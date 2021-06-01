@@ -1,4 +1,4 @@
-package android.bignerdranch.glowupgrow_client.proxy;
+package android.bignerdranch.glowupgrow_client.Proxy;
 
 import java.lang.reflect.Field;
 

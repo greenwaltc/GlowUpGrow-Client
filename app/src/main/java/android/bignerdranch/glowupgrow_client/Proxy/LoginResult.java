@@ -1,21 +1,23 @@
-package android.bignerdranch.glowupgrow_client.proxy;
+package android.bignerdranch.glowupgrow_client.Proxy;
 
-public class RegisterResult {
+public class LoginResult {
     private String authToken;
     private String username;
-    private String message;
+    private String userID;
+    private String errorMessage;
     private boolean success;
 
     // success response object
-    public RegisterResult(String authToken, String username, boolean success) {
+    public LoginResult(String authToken, String username, String userID, boolean success) {
         this.authToken = authToken;
         this.username = username;
+        this.userID = userID;
         this.success = success;
     }
 
     // failure response object
-    public RegisterResult(String message, boolean success) {
-        this.message = message;
+    public LoginResult(String errorMessage, boolean success) {
+        this.errorMessage = errorMessage;
         this.success = success;
     }
 
@@ -27,8 +29,12 @@ public class RegisterResult {
         return username;
     }
 
+    public String getUserID() {
+        return userID;
+    }
+
     public String getMessage() {
-        return message;
+        return errorMessage;
     }
 
     public boolean isSuccess() {

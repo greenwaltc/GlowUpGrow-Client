@@ -1,16 +1,16 @@
-package android.bignerdranch.glowupgrow_client.proxy;
+package android.bignerdranch.glowupgrow_client.Proxy;
 
 import java.lang.reflect.Field;
 
-public class LoginRequest {
-    private String username;
-    private String password;
+public class GetTerrsRequest {
+    private String authToken;
+    private int userID;
 
-    public LoginRequest() {}
+    public GetTerrsRequest() {}
 
-    public LoginRequest(String username, String password) {
-        setUsername(username);
-        setPassword(password);
+    public GetTerrsRequest(String authToken, int userID) {
+        setAuthToken(authToken);
+        setUserID(userID);
     }
 
     /**
@@ -45,19 +45,19 @@ public class LoginRequest {
         return false;
     }
 
-    public String getUsername() {
-        return username;
+    public String getAuthToken() {
+        return authToken;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setAuthToken(String authToken) {
+        this.authToken = authToken;
     }
 
-    public String getPassword() {
-        return password;
+    public int getUserID() {
+        return userID;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setUserID(int userID) {
+        this.userID = userID;
     }
 }

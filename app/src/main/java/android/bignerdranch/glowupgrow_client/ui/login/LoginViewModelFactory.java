@@ -4,8 +4,8 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.annotation.NonNull;
 
-import android.bignerdranch.glowupgrow_client.data.LoginDataSource;
-import android.bignerdranch.glowupgrow_client.data.LoginRepository;
+import android.bignerdranch.glowupgrow_client.Data.LoginDataSource;
+import android.bignerdranch.glowupgrow_client.Data.LoginRepository;
 
 /**
  * ViewModel provider factory to instantiate LoginViewModel.
