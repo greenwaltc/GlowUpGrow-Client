@@ -1,6 +1,6 @@
 package android.bignerdranch.glowupgrow_client.Proxy;
 
-import android.bignerdranch.glowupgrow_client.data.model.LiveTerrarium;
+import android.bignerdranch.glowupgrow_client.Data.model.LiveTerrarium;
 
 public class GetTerrResult {
     private LiveTerrarium terrarium;

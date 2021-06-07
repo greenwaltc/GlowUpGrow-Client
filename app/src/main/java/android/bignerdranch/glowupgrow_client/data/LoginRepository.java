@@ -1,6 +1,6 @@
-package android.bignerdranch.glowupgrow_client.data;
+package android.bignerdranch.glowupgrow_client.Data;
 
-import android.bignerdranch.glowupgrow_client.data.model.LoggedInUser;
+import android.bignerdranch.glowupgrow_client.Data.model.LoggedInUser;
 
 /**
  * Class that requests authentication and user information from the remote data source and

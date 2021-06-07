@@ -1,4 +1,4 @@
-package android.bignerdranch.glowupgrow_client.data;
+package android.bignerdranch.glowupgrow_client.Data;
 
 /**
  * A generic class that holds a result success w/ data or an error exception.

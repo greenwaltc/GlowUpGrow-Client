@@ -1,6 +1,6 @@
 package android.bignerdranch.glowupgrow_client.Proxy;
 
-import android.bignerdranch.glowupgrow_client.data.model.Plant;
+import android.bignerdranch.glowupgrow_client.Data.model.Plant;
 
 public class UpdateTerrResult {
     private Plant plant;

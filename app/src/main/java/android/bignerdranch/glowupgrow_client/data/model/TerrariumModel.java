@@ -1,4 +1,4 @@
-package android.bignerdranch.glowupgrow_client.data.model;
+package android.bignerdranch.glowupgrow_client.Data.model;
 
 public class TerrariumModel {
     private Integer modelID;
